@@ -1,0 +1,153 @@
+/* estilos globais */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+}
+
+h1 a {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color:rgb(43, 42, 42);
+    align-self: flex-end;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(43, 42, 42);
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 22px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(43, 42, 42);
+    line-height: 28px;
+    margin-top: 20;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/* header */
+
+.header {
+    flex-direction: row;
+    height: 80px;
+    width: auto;
+    align-items: center;
+    gap: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+.menu {
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 50px;
+    margin-left: auto;
+
+}
+
+
+
+/* center */
+
+.center {
+    background-image: url("/img/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 230px 30px;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+.acao {
+    flex-direction: column;
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+
+
+.texto {
+    flex-direction: column;
+}
+
+.button {
+    height: auto;
+    width: 100px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-image: linear-gradient(45deg, #b7d390, #bf82c9, #6fb4c2);
+    transition: 0.4s;
+}
+
+.button a{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background-image: none;
+    border: 2px solid #bf82c9;
+}
+
+
+@media (max-width: 1000px) {
+
+
+
+    .acao {
+        padding-left: 100px;
+        width: 550px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .center {
+        background-image: url(/img/home2.jpg);
+        background-position-x: left;
+        background-size:auto;
+        width: auto;
+        height: auto;
+    }
+
+    .acao {
+        float: left;
+        padding-left: 20px;
+        width: 280px;
+    }
+
+}

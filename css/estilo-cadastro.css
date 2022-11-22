@@ -1,0 +1,156 @@
+/* estilos globais */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+}
+
+h1 a {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color:rgb(43, 42, 42);
+    align-self: flex-end;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(43, 42, 42);
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 22px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(43, 42, 42);
+    line-height: 28px;
+    margin-top: 20;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/* header */
+
+.header {
+    flex-direction: row;
+    height: 80px;
+    width: auto;
+    align-items: center;
+    gap: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+.menu {
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 50px;
+    margin-left: auto;
+
+}
+
+
+/* center */
+
+.center {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    position: fixed;
+}
+
+/* footer */
+
+.footer {
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+    bottom: 0;
+    position: fixed;
+    background-color: #B2FF9E;
+    width: 100%;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+}
+
+.footer a {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cibus {
+    flex-direction: column;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.quem-somos {
+    flex-direction: column;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.trabalhe-conosco {
+    flex-direction: column;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.contato {
+    flex-direction: column;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+    
+    .footer {
+        gap: 15px;
+    }
+
+    .cibus, .quem-somos, .trabalhe-conosco, .contato {
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .cibus, .quem-somos, .trabalhe-conosco, .contato {
+        width: auto;
+    }
+}
