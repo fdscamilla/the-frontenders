@@ -91,9 +91,8 @@ a {
     gap: 30px;
     padding: 30px;
     bottom: 0;
-    position: fixed;
     background-color: #B2FF9E;
-    width: 100%;
+    width: auto;
 }
 
 h3 {
@@ -108,28 +107,22 @@ h3 {
     letter-spacing: 1px;
 }
 
-.cibus {
+.cibus, .quem-somos, .trabalhe-conosco, .contato, .redes {
     flex-direction: column;
     line-height: 22px;
     font-size: 14px;
 }
 
-.quem-somos {
-    flex-direction: column;
-    line-height: 22px;
-    font-size: 14px;
+
+.redes {
+    margin-right: 30px;
+    margin-left: auto;
 }
 
-.trabalhe-conosco {
-    flex-direction: column;
-    line-height: 22px;
-    font-size: 14px;
-}
-
-.contato {
-    flex-direction: column;
-    line-height: 22px;
-    font-size: 14px;
+.icones {
+    flex-direction: row;
+    gap: 20px;
+    margin-left: auto;
 }
 
 
@@ -152,5 +145,10 @@ h3 {
 
     .cibus, .quem-somos, .trabalhe-conosco, .contato {
         width: auto;
+    }
+
+    .redes, .icones {
+        margin-right: auto;
+        margin-left: 0;
     }
 }
