@@ -127,6 +127,11 @@ a {
     gap: 50px;
     width: auto;
 }
+
+.planos h4 {
+    margin-left: 30px;
+}
+
 .planos p {
     text-align: right;
     font-size: 14px;
