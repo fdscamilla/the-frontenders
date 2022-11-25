@@ -196,7 +196,7 @@ li::before{
 .button:hover {
     background-color: rgb(246, 246, 246);
     border: 2px solid #bf82c9;
-    
+    color:rgb(43, 42, 42);
 }
 
 
