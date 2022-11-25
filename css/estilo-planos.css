@@ -199,6 +199,10 @@ li::before{
     color:rgb(43, 42, 42);
 }
 
+.button a:hover {
+    color:rgb(43, 42, 42);
+}
+
 
 
 /* depoimentos */
