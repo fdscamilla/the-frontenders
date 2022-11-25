@@ -42,6 +42,8 @@ h4 {
     margin: 15px 0;
 }
 
+
+
 p {
     font-size: 18px;
     color: rgb(43, 42, 42);
@@ -56,8 +58,6 @@ a {
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
 }
-
-
 
 
 /* header */
@@ -81,6 +81,11 @@ a {
     margin-right: 50px;
     margin-left: auto;
 
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
 }
 
 /* center */
@@ -184,6 +189,8 @@ li::before{
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 2px;
+    text-decoration: none;
+    color:rgb(43, 42, 42);
 }
 
 .button:hover {
@@ -196,19 +203,90 @@ li::before{
 
 /* depoimentos */
 
+.depoimentos {
+    margin: 70px 0 50px 0;
+    flex-direction: column;
+}
+
+.depoimentos h2 {
+    font-size: 30px;
+    margin: 30px 0 0 0;
+    text-align: center;
+    align-self: center;
+}
+
+.depoimentos h2::after{
+    content: '';
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #bf82c9;
+}
+
+
+.carousel-item {
+    padding: 20px 20%;
+    gap: 30px;
+}
+
+.ficha {
+    flex-direction: column;
+    padding: 30px;
+    border: none;
+    align-items: center;
+    text-align: center;
+}
+
+.ficha h5 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(43, 42, 42);
+    font-size: 20px;
+    font-weight: 900;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.ficha p{
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.carousel-item img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 0 0 20px 0;
+}
+
+.depoimentos .carousel-control-prev-icon, .depoimentos .carousel-control-next-icon {
+    filter: invert();
+}
+
 
 
 /* duvidas */
 
 .duvidas {
-    margin: 100px 0 0 0;
+    margin: 50px;
     flex-direction: column;
+}
+
+.duvidas a{
+    text-decoration: none;
+    color: rgb(43, 42, 42);
 }
 
 .duvidas h2 {
     font-size: 30px;
     margin: 30px 0 0 0;
     text-align: center;
+    align-self: center;
+}
+
+.duvidas h2::after{
+    content: '';
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #bf82c9;
 }
 
 .faq-contato {
@@ -251,6 +329,8 @@ h3 {
 .footer a {
     font-weight: 600;
     letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(43, 42, 42);
 }
 
 .cibus, .quem-somos, .trabalhe-conosco, .contato, .redes {
