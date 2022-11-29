@@ -139,7 +139,7 @@ a {
 @media (max-width: 900px) {
 
     .center {
-        background-image: url(/img/home2.jpg);
+        background-image: url("/the-frontenders/img/home2.jpg");
         background-position-x: left;
         background-size:auto;
         width: auto;
