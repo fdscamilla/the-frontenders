@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo-senha.css">
+    <link rel="stylesheet" href="estilo-senha.css">
     <link rel="icon" href="img/favicon_io/favicon.ico">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <script src="js/script-senha.js"></script>
+    <script src="script-senha.js"></script>
     <title>Recuperação de senha</title>
 </head>
 <body>
@@ -33,11 +33,30 @@
         </div>
 
     </div>
+    <br><br>
 
     <!--center-->
-    <div class="center">
+    <div class="container">
+        <div class="center">
+        <h1>Recuperar Senha</h1>
+    
+    
+        <input type="email" placeholder="Digite seu Email"
+        onblur="validarEmail()" onfocus="redefinirMsg()" id="email"/>
         
+      <span id="error-email"></span>
+        <br><br>
+        <button class="confirma" onclick="alerta()">Enviar</button>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </div>
+    <br><br>
+    <script>
+       var botao = document.querySelector(".confirma")
+       if (error.innerHTML=="Email invalido"){
+        button.disabled = true;
+       }
+    </script>
 
 
     <!--footer-->
