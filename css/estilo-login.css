@@ -150,20 +150,6 @@ span{
     color: black;
 }
 
-div.alternative span::before, div.alternative span::after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 130px;
-    bottom: 35%;
-    right: 570px;
-    background: black; 
-}
-
-div.alternative span::after{
-    left: 530px;
-}
-
 .midia a{
     float: left;
     margin: auto;
