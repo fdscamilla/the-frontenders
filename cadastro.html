@@ -15,7 +15,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <script src="js/script-cadastro.js"></script>
+    <script src="js/script-cadastro.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript" defer></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -36,52 +37,173 @@
 
     <!--center-->
     <div class="center">
+        <div class="formF">
+            <div id="opCont">
+                <span id="opD">Opções de dieta</span>
 
+
+            <div id="bloco1">  
+                <div id="onivoro"> <img src="img/cadastro/undraw_breakfast_psiw.svg" alt="Op Onivoro" srcset="" id="onivoroImg">  <h3>Onivoro</h3> <span>Dieta tradicional com fontes de alimento vegetais e animais</span></div>
+                <div id="vegan"> <img src="img/cadastro/undraw_friends_r511.svg" alt="Op Vegan" srcset="" id="veganImg"> <h3>Vegano</h3> <span>Dieta sem qualquer tipo de alimento de fonte animal apenas vegetal</span> </div>
+
+            </div>
+
+            <div id="bloco2">
+
+                <div id="vegetariano"> <img src="img/cadastro/undraw_environment_iaus.svg" alt="Op Vegetariano" srcset="" id="vegetarianoImg"> <h3>vegetariano</h3> <span id="c">Dieta sem carne, porém inclui ovos, leite e alguns produtos animais</span> </div>
+                <div id="CarneBranca"> <img src="img/cadastro/undraw_fish_bowl_uu88.svg" alt="Op Proteina Branca" srcset="" id="CarneBrancaImg"> <h3>Carne Branca</h3>  <span id="c">Dieta que exclui o consumo de carne vermelha, mas ainda inclui peixes, aves e frutos do mar</span></div>
+
+            </div>
+
+            <div id="separa"> <div id="traco"></div> <span id="opS">Apenas para plano premium</span> <div id="traco"></div></div>
+
+            <div id="bloco3">
+
+                <div id="massa"> <img src="img/cadastro/undraw_personal_training_0dqn.svg" alt="op Massa" srcset="" id="massaImg"> <h3 id="mMen">Ganho de Massa</h3> <span id="c">Dieta indicada para pessoas que desejam ganhar massa muscular(Feito com acompanhmaento de um profissional para sua segurança e maiores ganhos)</span></div>
+                <div id="magrao"> <img src="img/cadastro/undraw_indoor_bike_pwa4.svg" alt="op Deficit Calórico" srcset="" id="magraImg"> <h3 id="dMen">Deficit Calórico</h3> <span id="c">Dieta para perda de peso consumindo menos calorias do que a taxa díaria(Feito APENAS com acompanhamento profissional por segurança)</span></div>
+
+            </div>
+
+            </div>
+
+            <div id="fundoForm">
+                    <span class="i">Planos</span>
+                <div id="planos">
+                    <div id="planoB">
+                        <input type="radio" name="plano" id="basico">
+                        <span class="b">Básico</span>
+                        <div id="adesaoB">
+                            <span>Adesão</span>
+                            <span>zero</span>
+                        </div>
+                        <div id="fidelidadeB">
+                            <span>Fidelidade</span>
+                            <span>Não possui</span>
+                        </div>
+                        <div id="mensalidadeB">
+                            <span>Mensalidade</span>
+                            <span>R$240,oo</span>
+                        </div>
+                    </div>
+
+                    <div id="planoP">
+                        <input type="radio" name="plano" id="primium">
+                        <span class="p">Premium</span>
+                        <div id="adesao">
+                            <span>Adesão</span>
+                            <span>zero</span>
+                        </div>
+                        <div id="fidelidade">
+                            <span>Fidelidade</span>
+                            <span>Não possui</span>
+                        </div>
+                        <div id="mensalidade">
+                            <span>Mensalidade</span>
+                            <span>R$300,oo</span>
+                        </div>
+                    </div>
+
+                </div>
+            <div id="rest">
+                <span class="i">Restrições alimentares</span>
+                <input class="input" id="restri" type="text" placeholder="Restrições alimentares(não obrigatório)">
+            </div>
+                <span class="i">Dados pessoais</span>
+                <form>
+                    <div id="cep">
+                        <input id="cepIn" type="text" placeholder="CEP">
+                        <div id="roda"><img src="img/cadastro/8f19793b2671094e63a15ab883d50137.svg" alt="carregando" srcset=""></div>
+                    </div>
+
+                    <div id="blocoD1">
+                        <input class="input" id="ruaIn" type="text" placeholder="Rua" disabled>
+                        <input class="input" id="numeroIn" type="text" placeholder="Número" disabled>
+                    </div>
+
+                    <div id="blocoD1">
+                        <input class="input" id="complementoIn" type="text" placeholder="Complemento" disabled>
+                        <input class="input" id="bairroIn" type="text" placeholder="Bairro" disabled>
+                    </div>
+
+                    <div id="blocoD1">
+                        <input class="input" id="cidadeIn" type="text" placeholder="Cidade" disabled>
+                        <input class="input" id="estadoIn" type="text" placeholder="Estado" disabled>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
     </div>
 
     <!--footer-->
-    <div class="footer">
 
-        <div class="cibus">
-            <h3>Cibus</h3>
-            <a href="">Cardápios</a>
-            <a href="">Receitas</a>
-            <a href="">Entrega</a>
-            <a href="">Blog</a>
-        </div>
+    <div class="fut">
 
-        <div class="quem-somos">
-            <h3>Quem somos</h3>
-            <a href="">Valores</a>
-            <a href="">Equipe</a>
-            <a href="">Fornecedores</a>
-        </div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
-        <div class="trabalhe-conosco">
-            <h3>Trabalhe conosco</h3>
-            <a href="">Seja um parceiro</a>
-            <a href="">Seja um consultor</a>
-            <a href="">Carreiras</a>
-        </div>
+            <path 
+            class="wave-4" 
+            fill="#8EE080" fill-opacity="1" d="M0,320L20,282.7C40,245,80,171,120,133.3C160,96,200,96,240,112C280,128,320,160,360,181.3C400,203,440,213,480,186.7C520,160,560,96,600,74.7C640,53,680,75,720,90.7C760,107,800,117,840,128C880,139,920,149,960,133.3C1000,117,1040,75,1080,64C1120,53,1160,75,1200,112C1240,149,1280,203,1320,192C1360,181,1400,107,1420,69.3L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
 
-        <div class="contato">
-            <h3>Contato</h3>
-            <a href="">Perguntas frequentes</a>
-            <a href="">Entre em contato</a>
-        </div>
-
-        <div class="redes">
-            <h3>Siga as nossas redes</h3>
+            <path 
+            class="wave-3" 
+            fill="#87ED7B" fill-opacity="1" d="M0,160L20,176C40,192,80,224,120,218.7C160,213,200,171,240,181.3C280,192,320,256,360,245.3C400,235,440,149,480,122.7C520,96,560,128,600,149.3C640,171,680,181,720,197.3C760,213,800,235,840,218.7C880,203,920,149,960,138.7C1000,128,1040,160,1080,165.3C1120,171,1160,149,1200,117.3C1240,85,1280,43,1320,42.7C1360,43,1400,85,1420,106.7L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
             
-            <div class="icones">
-                <a href=""><img src="img/instagram.png" alt=""></a>
-                <a href=""><img src="img/youtube.png" alt=""></a>
-                <a href=""><img src="img/tik-tok.png" alt=""></a>
-                <a href=""><img src="img/twitter.png" alt=""></a>
+            <path 
+            class="wave-2" 
+            fill="#95F781" fill-opacity="1" d="M0,64L26.7,101.3C53.3,139,107,213,160,213.3C213.3,213,267,139,320,106.7C373.3,75,427,85,480,106.7C533.3,128,587,160,640,186.7C693.3,213,747,235,800,256C853.3,277,907,299,960,298.7C1013.3,299,1067,277,1120,229.3C1173.3,181,1227,107,1280,101.3C1333.3,96,1387,160,1413,192L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+        
+            <path 
+            class="wave-1" 
+            fill="#B2FF9E" fill-opacity="1" d="M0,160L40,144C80,128,160,96,240,112C320,128,400,192,480,208C560,224,640,192,720,192C800,192,880,224,960,213.3C1040,203,1120,149,1200,144C1280,139,1360,181,1400,202.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+
+
+        </svg>
+
+        <div class="footer">
+
+            <div class="cibus">
+                <h3>Cibus</h3>
+                <a href="">Cardápios</a>
+                <a href="">Receitas</a>
+                <a href="">Entrega</a>
+                <a href="">Blog</a>
+            </div>
+
+            <div class="quem-somos">
+                <h3>Quem somos</h3>
+                <a href="">Valores</a>
+                <a href="">Equipe</a>
+                <a href="">Fornecedores</a>
+            </div>
+
+            <div class="trabalhe-conosco">
+                <h3>Trabalhe conosco</h3>
+                <a href="">Seja um parceiro</a>
+                <a href="">Seja um consultor</a>
+                <a href="">Carreiras</a>
+            </div>
+
+            <div class="contato">
+                <h3>Contato</h3>
+                <a href="">Perguntas frequentes</a>
+                <a href="">Entre em contato</a>
+            </div>
+
+            <div class="redes">
+                <h3>Siga as nossas redes</h3>
+                
+                <div class="icones">
+                    <a href=""><img src="img/instagram.png" alt=""></a>
+                    <a href=""><img src="img/youtube.png" alt=""></a>
+                    <a href=""><img src="img/tik-tok.png" alt=""></a>
+                    <a href=""><img src="img/twitter.png" alt=""></a>
+                </div>
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
