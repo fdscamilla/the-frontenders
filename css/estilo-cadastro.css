@@ -1,5 +1,6 @@
 /* estilos globais */
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +9,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 div {
@@ -79,18 +81,448 @@ a {
 /* center */
 
 .center {
-    width: 100%;
+    width: 100vw;
+}
+
+.formF{
+    width: 80vw;
+    height: 1220px;
+    margin-top: 4vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    background-color: rgb(246, 246, 246);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 2%;
+}
+/*Opções de dieta*/
+#opCont{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
     height: auto;
-    padding: 30px;
+    background-color: #B2FF9E;
+    border-top-left-radius: 2%;
+}
+
+#opD{
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*Opcoes de plano preamium*/
+
+#separa{
+    width: 40vw;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+#opS{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    align-self: center;
+}
+
+#traco{
+    width: 8vw;
+    height: 3px;
+    background-color: #086375;
+    align-self: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    border-radius: 2px;
+}
+
+#bloco1{
+    justify-content: space-around;
+}
+
+#bloco1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17vw;
+    height: 17vw;
+    border: 3px solid #086375;
+    border-radius: 2%;
+    margin-bottom: 30px;
+}
+
+#bloco1 div:hover{
+    border: 3px solid #1DD3B0;
+}
+
+
+#bloco1 div h3{
+    align-self: center;
+    margin-bottom: 2px;
+}
+
+#onivoro span{margin-left: 2.3vw;}
+
+#vegan span{margin-left: 0.5vw;}
+
+#bloco1 div span{
+    justify-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#onivoroImg{align-self: center;}
+
+#veganImg{align-self: center;}
+
+#bloco2{
+    justify-content: space-around;
+}
+
+#bloco2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17vw;
+    height: 17vw;
+    border: 3px solid #086375;
+    border-radius: 2%;
+}
+
+#bloco2 div:hover{
+    border: 3px solid #1DD3B0;
+}
+
+#CarneBranca span{
+    margin-left: 1vw;
+}
+
+#vegetariano span{margin-left: 1.5vw;}
+
+#bloco2 div h3{
+    align-self: center;
+    margin-bottom: 3px;
+}
+
+#bloco2 div span{
+    justify-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#vegetarianoImg{align-self: center;}
+
+#CarneBrancaImg{align-self: center;}
+
+#bloco3{
+    justify-content: space-around;
+}
+
+#bloco3 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17vw;
+    height: 17vw;
+    border: 3px solid #086375;
+    border-radius: 2%;
+}
+
+#bloco3 div:hover{
+    border: 3px solid #1DD3B0;
+}
+
+#bloco3 div h3{
+    align-self: center;
+    margin-bottom: 2px;
+}
+
+#bloco3 div span{
+    justify-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+#massaImg{align-self: center;}
+
+#magraImg{align-self: center;}
+
+#onivoroImg{
+    width: 10vw;
+    height: auto;
+}
+
+#veganImg{
+    width: 10vw;
+    height: auto;
+}
+
+#vegetarianoImg{
+    width: 10vw;
+    height: auto;
+}
+
+#CarneBrancaImg{
+    width: 10vw;
+    height: auto;
+}
+
+#massaImg{
+    width: 10vw;
+    height: auto;
+}
+
+#magraImg{
+    width: 10vw;
+    height: auto;
+}
+
+
+/* planos*/
+
+#planos{
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    align-self: center;
+}
+
+#adesao{
+    flex-direction: column;
+    margin-left: 30px;
+    color: white;
+}
+
+#adesaoB{
+    flex-direction: column;
+    margin-left: 30px;
+    color: white;
+}
+
+#fidelidade{
+    flex-direction: column;
+    margin-left: 30px;
+    color: white;
+}
+
+#fidelidadeB{
+    flex-direction: column;
+    margin-left: 16px;
+    color: white;
+}
+
+#mensalidade{
+    flex-direction: column;
+    margin-left: 30px;
+    color: white;
+}
+
+#mensalidadeB{
+    flex-direction: column;
+    margin-left: 16px;
+    color: white;
+}
+
+#planoB{
+    margin-bottom: 30px;
+    background-color: #086375;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size:0.87rem;
+}
+
+#planoP{
+    margin-bottom: 30px;
+    background-color: #086375;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size:0.87rem;
+}
+
+.b{
+    margin-top: 9px;
+    color: white;
+}
+
+.p{
+    margin-top: 9px;
+    color: white;
+}
+
+#planoB span{
+    margin-right: 14px;
+    
+}
+
+
+/*restricoes alimentares*/
+
+#rest{
+    display: flex;
+    flex-direction: column;
+}
+
+#rest input{
+    align-self: center;
+}
+
+#rest span{
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+#restri{
+    background-color: #B2FF9E;
+    border-color: #086375;
+    border: 2px solid;
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 30vw;
+    height: 25px;
+}
+
+/*formulario*/
+
+
+#fundoForm{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#blocoD1{
+    justify-content: center;
+}
+
+.input{
+    background-color: #B2FF9E;
+    border-color: #086375;
+    border: 2px solid;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 14vw;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.i{
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#cep{
+    justify-content: center;
+}
+
+#cepIn{
+    background-color: #B2FF9E;
+    border-color: #086375;
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 30vw;
+    height: 25px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+#roda{
+    width: 30px;
+    height: 30px;
+    animation: rodaRoda 1s ease-in-out infinite none;
+    display: none;
+}
+@keyframes rodaRoda {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+    
 }
 
 /* footer */
+
+/* footer *//* animação ondas*/
+
+
+
+.fut{
+    display: flex;
+    flex-direction: column;
+  /*  margin-top: -25vh;*/
+    width: 100vw;
+    bottom: 0;
+}
+
+.wave-4{
+    animation: moveWave4 3s ease-in-out infinite alternate;
+}
+@keyframes moveWave4 {
+    from{
+        transform: translateX(-1400px);
+        transform: scale(1.1);
+    }to{
+        transform: translateX(0);
+        transform: scaleX(1);
+    }
+}
+
+.wave-3{
+    animation: moveWave3 1.3s 1.6s ease-in-out infinite alternate;
+}
+@keyframes moveWave3 {
+    from{
+        transform: translateX(-2800px);
+        transform: scaleX(1.1);
+    }to{
+        transform: translateX(1800px);
+        transform: scaleX(1);
+    }
+}
+
+.wave-2{
+    animation: moveWave2 3.3s 1.1s ease-in-out infinite alternate;
+}
+@keyframes moveWave2 {
+    from{
+        transform: translateX(-410px);
+    }
+}
+
+.wave-1{
+    animation: moveWave1 1.2s 0.7s ease-in-out infinite alternate;
+}
+@keyframes moveWave1 {
+    from{
+        transform: translateX(-2000px);
+        transform: scaleX(1.2);
+    }to{
+        transform: translateX(800px);
+        transform: scaleX(1.1);
+    }
+}
+
 
 .footer {
     flex-direction: row;
     gap: 30px;
     padding: 30px;
-    bottom: 0;
     background-color: #B2FF9E;
     width: auto;
 }
@@ -125,6 +557,243 @@ h3 {
     margin-left: auto;
 }
 
+@media (max-width:1600px){
+    .formF{
+        height: 1070px;
+    }
+}
+
+@media (max-width:1560px){
+    .formF{
+        height: 1070px;
+    }
+
+    #onivoro span{margin-left: 1vw;}
+
+    #vegan span{margin-left: 0.5vw;}
+
+    #bloco3 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 17vw;
+        height: 18.5vw;
+        border: 3px solid #086375;
+        border-radius: 2%;
+    }
+
+    #bloco3 div span{
+        margin-left: 0.2vw;
+    }
+
+}
+
+@media (max-width:1480px){
+    .formF{
+        height: 1050px;
+    }
+}
+
+@media (max-width:1480px){
+    .formF{
+        height: 1030px;
+    }
+}
+
+@media (max-width:1410px){
+    .formF{
+        height: 1020px;
+    }
+}
+
+@media (max-width:1380px){
+    .formF{
+        height: 1010px;
+    }
+}
+
+@media (max-width:1360px){
+    .formF{
+        height: 995px;
+    }
+}
+
+@media (max-width:1310px){
+
+    .formF{
+        height: 1100px;
+    }
+
+    #bloco3 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 17vw;
+        height: 21vw;
+        border: 3px solid #086375;
+        border-radius: 2%;
+    }
+
+    #bloco2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 17vw;
+        height: 20vw;
+        border: 3px solid #086375;
+        border-radius: 2%;
+    }
+
+    #bloco1 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 17vw;
+        height: 20vw;
+        border: 3px solid #086375;
+        border-radius: 2%;
+    }
+
+}
+
+@media (max-width:1300px){
+    .formF{
+        height: 1065px;
+    }
+}
+
+@media (max-width:1235px){
+    .formF{
+        height: 1030px;
+    }
+
+}
+
+@media (max-width:1170px){
+    .formF{
+        height: 995px;
+    }
+
+    #bloco3 div{
+        height: 24vw;
+    }
+
+    #planoB{
+        flex-direction: column;
+    }
+
+    #planoP{
+        flex-direction: column;
+    }
+
+    #adesao{
+        align-self: center;
+    }
+    
+    #adesaoB{
+        align-self: center;
+    }
+    
+    #fidelidade{
+        align-self: center;
+    }
+    
+    #fidelidadeB{
+        align-self: center;
+    }
+    
+    #mensalidade{
+        align-self: center;
+    }
+    
+    #mensalidadeB{
+        align-self: center;
+    }
+    .p{padding-left: 13vw;}
+    .b{padding-left: 13vw;}
+}
+
+@media (max-width:1085px){
+    .formF{
+        height: 1030px;
+    }
+    #bloco2 div{
+        height: 22vw;
+    }
+    #bloco1 div{
+        height: 22vw;
+    }
+    #bloco3 div{
+        height: 25vw;
+    }
+}
+
+@media (max-width:1031px){
+    .formF{
+        height: 990px;
+    }
+    #bloco3 div{
+        height: 27vw;
+    }
+}
+
+@media (max-width:976px){
+    .formF{
+        height: 960px;
+    }
+    #bloco3 div{
+        height: 29vw;
+    }
+}
+
+@media (max-width:945px){
+    .formF{
+        height: 990px;
+    }
+    #bloco2 div{
+        height: 23vw;
+    }
+    #bloco1 div{
+        height: 23vw;
+    }
+    #bloco3 div{
+        height: 30vw;
+    }
+}
+
+
+
+@media (max-width:852px){
+    .formF{
+        height: 1050px;
+    }
+    #bloco2 div{
+        height: 30vw;
+    }
+    #bloco1 div{
+        height: 28vw;
+    }
+    #bloco3 div{
+        height: 40vw;
+    }
+
+}
+
+@media (max-width:760px){
+    .formF{
+        height: 1060px;
+    }
+    #bloco2 div{
+        height: 36vw;
+    }
+    #bloco1 div{
+        height: 28vw;
+    }
+    #bloco3 div{
+        height: 43vw;
+    }
+
+}
 
 @media (max-width: 600px) {
     
