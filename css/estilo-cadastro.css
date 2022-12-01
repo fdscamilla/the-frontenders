@@ -81,15 +81,15 @@ a {
 /* center */
 
 .center {
-    width: 100vw;
+    width: 100%;
 }
 
 .formF{
     width: 80vw;
     height: 1220px;
     margin-top: 4vh;
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-right: auto;
+    margin-left: auto;
     background-color: rgb(246, 246, 246);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 2%;
@@ -161,13 +161,21 @@ a {
 
 
 #bloco1 div h3{
-    align-self: center;
-    margin-bottom: 2px;
+    text-align: center;
+
 }
 
-#onivoro span{margin-left: 2.3vw;}
+#onivoro span{
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
 
-#vegan span{margin-left: 0.5vw;}
+#vegan span{
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
 
 #bloco1 div span{
     justify-self: center;
@@ -198,14 +206,19 @@ a {
 }
 
 #CarneBranca span{
-    margin-left: 1vw;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
-#vegetariano span{margin-left: 1.5vw;}
+#vegetariano span{
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
 
 #bloco2 div h3{
-    align-self: center;
-    margin-bottom: 3px;
+    text-align: center;
 }
 
 #bloco2 div span{
@@ -237,8 +250,7 @@ a {
 }
 
 #bloco3 div h3{
-    align-self: center;
-    margin-bottom: 2px;
+    text-align: center;
 }
 
 #bloco3 div span{
@@ -246,6 +258,18 @@ a {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 0.95rem;
+}
+
+#massa span{
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+#magrao sapn{
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 #massaImg{align-self: center;}
@@ -350,21 +374,29 @@ a {
     font-size:0.87rem;
 }
 
+#planoI{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:27vw;
+}
+
+#primium{
+    margin-left: 1vw;
+}
+
+#basico{
+    margin-left: 1vw;
+}
+
 .b{
-    margin-top: 9px;
     color: white;
 }
 
 .p{
-    margin-top: 9px;
     color: white;
 }
-
-#planoB span{
-    margin-right: 14px;
-    
-}
-
 
 /*restricoes alimentares*/
 
@@ -390,6 +422,7 @@ a {
     margin-left: 20px;
     width: 30vw;
     height: 25px;
+    text-align: center;
 }
 
 /*formulario*/
@@ -427,18 +460,22 @@ a {
 }
 
 #cep{
-    justify-content: center;
+    justify-content: space-around;
+    padding-left: 1vw;
 }
 
 #cepIn{
     background-color: #B2FF9E;
     border-color: #086375;
     border-radius: 8px;
-    margin-left: 20px;
-    width: 30vw;
+    width: 30.7vw;
     height: 25px;
     margin-bottom: 15px;
-    padding-left: 20px;
+    text-align: center;
+}
+
+#cepIn ::-webkit-input-placeholder{
+    text-align: center;
 }
 
 #roda{
@@ -465,8 +502,7 @@ a {
 .fut{
     display: flex;
     flex-direction: column;
-  /*  margin-top: -25vh;*/
-    width: 100vw;
+    width: 100%;
     bottom: 0;
 }
 
@@ -557,243 +593,7 @@ h3 {
     margin-left: auto;
 }
 
-@media (max-width:1600px){
-    .formF{
-        height: 1070px;
-    }
-}
 
-@media (max-width:1560px){
-    .formF{
-        height: 1070px;
-    }
-
-    #onivoro span{margin-left: 1vw;}
-
-    #vegan span{margin-left: 0.5vw;}
-
-    #bloco3 div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 17vw;
-        height: 18.5vw;
-        border: 3px solid #086375;
-        border-radius: 2%;
-    }
-
-    #bloco3 div span{
-        margin-left: 0.2vw;
-    }
-
-}
-
-@media (max-width:1480px){
-    .formF{
-        height: 1050px;
-    }
-}
-
-@media (max-width:1480px){
-    .formF{
-        height: 1030px;
-    }
-}
-
-@media (max-width:1410px){
-    .formF{
-        height: 1020px;
-    }
-}
-
-@media (max-width:1380px){
-    .formF{
-        height: 1010px;
-    }
-}
-
-@media (max-width:1360px){
-    .formF{
-        height: 995px;
-    }
-}
-
-@media (max-width:1310px){
-
-    .formF{
-        height: 1100px;
-    }
-
-    #bloco3 div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 17vw;
-        height: 21vw;
-        border: 3px solid #086375;
-        border-radius: 2%;
-    }
-
-    #bloco2 div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 17vw;
-        height: 20vw;
-        border: 3px solid #086375;
-        border-radius: 2%;
-    }
-
-    #bloco1 div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 17vw;
-        height: 20vw;
-        border: 3px solid #086375;
-        border-radius: 2%;
-    }
-
-}
-
-@media (max-width:1300px){
-    .formF{
-        height: 1065px;
-    }
-}
-
-@media (max-width:1235px){
-    .formF{
-        height: 1030px;
-    }
-
-}
-
-@media (max-width:1170px){
-    .formF{
-        height: 995px;
-    }
-
-    #bloco3 div{
-        height: 24vw;
-    }
-
-    #planoB{
-        flex-direction: column;
-    }
-
-    #planoP{
-        flex-direction: column;
-    }
-
-    #adesao{
-        align-self: center;
-    }
-    
-    #adesaoB{
-        align-self: center;
-    }
-    
-    #fidelidade{
-        align-self: center;
-    }
-    
-    #fidelidadeB{
-        align-self: center;
-    }
-    
-    #mensalidade{
-        align-self: center;
-    }
-    
-    #mensalidadeB{
-        align-self: center;
-    }
-    .p{padding-left: 13vw;}
-    .b{padding-left: 13vw;}
-}
-
-@media (max-width:1085px){
-    .formF{
-        height: 1030px;
-    }
-    #bloco2 div{
-        height: 22vw;
-    }
-    #bloco1 div{
-        height: 22vw;
-    }
-    #bloco3 div{
-        height: 25vw;
-    }
-}
-
-@media (max-width:1031px){
-    .formF{
-        height: 990px;
-    }
-    #bloco3 div{
-        height: 27vw;
-    }
-}
-
-@media (max-width:976px){
-    .formF{
-        height: 960px;
-    }
-    #bloco3 div{
-        height: 29vw;
-    }
-}
-
-@media (max-width:945px){
-    .formF{
-        height: 990px;
-    }
-    #bloco2 div{
-        height: 23vw;
-    }
-    #bloco1 div{
-        height: 23vw;
-    }
-    #bloco3 div{
-        height: 30vw;
-    }
-}
-
-
-
-@media (max-width:852px){
-    .formF{
-        height: 1050px;
-    }
-    #bloco2 div{
-        height: 30vw;
-    }
-    #bloco1 div{
-        height: 28vw;
-    }
-    #bloco3 div{
-        height: 40vw;
-    }
-
-}
-
-@media (max-width:760px){
-    .formF{
-        height: 1060px;
-    }
-    #bloco2 div{
-        height: 36vw;
-    }
-    #bloco1 div{
-        height: 28vw;
-    }
-    #bloco3 div{
-        height: 43vw;
-    }
-
-}
 
 @media (max-width: 600px) {
     
