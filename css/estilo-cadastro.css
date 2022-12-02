@@ -454,11 +454,23 @@ a {
     padding-left: 10px;
 }
 
+#emailIn{
+    background-color: #B2FF9E;
+    border-color: #086375;
+    border-radius: 8px;
+    width: 30.8vw;
+    height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 #bairroIn{margin-left: 20px;}
 
 #numeroIn{margin-left: 20px;}
 
 #estadoIn{margin-left: 20px;}
+
+#idadeIn{margin-left: 20px;}
 
 .i{
     align-self: center;
@@ -473,11 +485,15 @@ a {
     justify-content: space-around;
 }
 
+#email{
+    justify-content: space-around;
+}
+
 #cepIn{
     background-color: #B2FF9E;
     border-color: #086375;
     border-radius: 8px;
-    width: 30.7vw;
+    width: 30.8vw;
     height: 25px;
     margin-bottom: 20px;
     text-align: center;
