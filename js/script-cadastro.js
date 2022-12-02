@@ -1,3 +1,4 @@
+
 //campos de informaçao
 
 const cep = document.querySelector("#cepIn");
@@ -7,6 +8,9 @@ const complemento = document.getElementById("complementoIn");
 const bairro = document.getElementById("bairroIn");
 const cidade = document.getElementById("cidadeIn");
 const estado = document.getElementById("estadoIn");
+const idade = document.getElementById("idadeIn");
+const nome = document.getElementById("nomeIn");
+const email = document.getElementById("emailIn");
 
 // dietas
 
@@ -155,7 +159,6 @@ magrao.addEventListener("mouseout", () => {
     }
 });
 
-
 //API
 
 //Verifica as teclas digistadas e são numeros
@@ -191,17 +194,18 @@ const pegaEndereco = async (cep) =>{
             if(cepApi.status == 200){
                 cepobj = JSON.parse(cepApi.response);
                 console.log(cepobj);
-                rua.value = parse(cepobj.logradouro);
-                bairro.value = parse(cepobj.bairro);
-                cidade.value = parse(cepobj.localidade);
-                estado.value = parse(cepobj.uf);
+                rua.value = cepobj.logradouro;
+                bairro.value = cepobj.bairro;
+                cidade.value = cepobj.localidade;
+                estado.value = cepobj.uf;
                 lCarrega();
             }else{
+                swal("Erro!", "...Problema de conexão com servidor! Tente mais tarde.");
                 throw new Error("Houve um problema com o servidor");
             }
             
         } catch (error) {
-            console.log("Houve um problema");
+            console.log("[Houve um problema]");
             console.log(error.message);
 
         }
@@ -212,5 +216,28 @@ const pegaEndereco = async (cep) =>{
 
 function lCarrega(){
     document.getElementById("cad").style.display = "block";
+}
+
+function enviar (){
+    verify();
+}
+
+let verify =()=>{
+    if(nome.value == ""){
+        swal("Erro!", "...Nome Inválido!");
+        throw new Error("Nome inválido");
+    }else if (email.value == "" || email.value.indexOf('@')==-1 || email.value.indexOf('.')==-1) {
+        swal("Erro!", "...Email Inválido!");
+        throw new Error("Email inválido");
+    }else if(idade == ""){
+        swal("Erro!", "...Idade Inválido!");
+        throw new Error("idade inválida");
+    }else if(numero == ""){
+        swal("Erro!", "...Número Inválido!");
+        throw new Error("Número inválido");
+    }else{
+        swal('Feito!','Perfil Cadastrado','success');
+    }
+    
 }
 
