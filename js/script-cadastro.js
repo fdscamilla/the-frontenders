@@ -180,17 +180,37 @@ cep.addEventListener("keyup", (e) =>{
 //chama API
 
 const pegaEndereco = async (cep) =>{
-    alert(cep);
+    const apiURL =`https://viacep.com.br/ws/${cep}/json/`;
+
+    const cepApi = new XMLHttpRequest;
+    cepApi.open("get",apiURL);
+    cepApi.send();
+
+    cepApi.onload = function(){
+        try {
+            if(cepApi.status == 200){
+                cepobj = JSON.parse(cepApi.response);
+                console.log(cepobj);
+                rua.value = parse(cepobj.logradouro);
+                bairro.value = parse(cepobj.bairro);
+                cidade.value = parse(cepobj.localidade);
+                estado.value = parse(cepobj.uf);
+                lCarrega();
+            }else{
+                throw new Error("Houve um problema com o servidor");
+            }
+            
+        } catch (error) {
+            console.log("Houve um problema");
+            console.log(error.message);
+
+        }
+    }
 }
 
-// aparece um load pro usuário, explicitando que algo está acontecendo no background. Assim ele sossega o faixo e espera a API falar com o servidor sem dar f5
+//liga botao cadastro
 
 function lCarrega(){
-    document.getElementById("roda").style.display = "block";
+    document.getElementById("cad").style.display = "block";
 }
 
-//desliga a rodinha
-
-function dCarrega(){
-    document.getElementById("roda").style.display = "none";
-}
