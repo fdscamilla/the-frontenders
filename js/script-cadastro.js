@@ -235,6 +235,8 @@ let verify =()=>{
     }else if(numero == ""){
         swal("Erro!", "...Número Inválido!");
         throw new Error("Número inválido");
+    }else if(opP.checked == false && opB.checked == false){
+        swal("Erro!", "...Selecione um Plano!");
     }else{
         swal('Feito!','Perfil Cadastrado','success');
     }
