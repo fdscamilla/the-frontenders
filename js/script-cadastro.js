@@ -237,6 +237,10 @@ let verify =()=>{
         throw new Error("Número inválido");
     }else if(opP.checked == false && opB.checked == false){
         swal("Erro!", "...Selecione um Plano!");
+        throw new Error("Nenhum Plano Selecionado!");
+    }else if(idade.value.length < 8){
+        swal("Erro!", "...Nascimento Inválido!");
+        throw new Error("Nascimento Invalido!");
     }else{
         swal('Feito!','Perfil Cadastrado','success');
     }
