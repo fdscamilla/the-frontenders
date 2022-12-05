@@ -11,6 +11,8 @@ const estado = document.getElementById("estadoIn");
 const idade = document.getElementById("idadeIn");
 const nome = document.getElementById("nomeIn");
 const email = document.getElementById("emailIn");
+const senha = document.getElementById("senhaIn");
+const senhaC = document.getElementById("senhaCIn")
 
 // dietas
 
@@ -226,6 +228,15 @@ let verify =()=>{
     if(nome.value == ""){
         swal("Erro!", "...Nome Inválido!");
         throw new Error("Nome inválido");
+    }else if(senha.value == ""){
+        swal("Erro!", "...Senha Inválida!");
+        throw new Error("Senha inválida");
+    }else if(senhaC.value == ""){
+        swal("Erro!", "...Confirme a senha!");
+        throw new Error("Confime a senha");
+    }else if(senhaC.value != senha.value){
+        swal("Erro!", "...Confirme a senha corretamente!");
+        throw new Error("Confime a senha corretamente");
     }else if (email.value == "" || email.value.indexOf('@')==-1 || email.value.indexOf('.')==-1) {
         swal("Erro!", "...Email Inválido!");
         throw new Error("Email inválido");
