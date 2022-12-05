@@ -653,6 +653,10 @@ h3 {
         flex-direction: column;
     }
 
+    #planoI{
+        width: 100%;
+    }
+
     #basico{
         margin: 0;
     }
@@ -674,6 +678,24 @@ h3 {
     #fidelidade{margin: 0;}
 
     #mensalidade{margin: 0;}
+}
+
+@media(max-width: 1215px){
+
+    #bloco1 div{
+        width: 200px;
+        height: 260px;
+    }
+
+    #bloco2 div{
+        width: 200px;
+        height: 260px;
+    }
+
+    #bloco3 div{
+        width: 200px;
+        height: 275px;
+    }
 }
 
 @media (max-width: 600px) {
