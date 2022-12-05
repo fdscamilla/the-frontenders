@@ -1,9 +1,7 @@
 # the-frontenders
-##Repositório usado durante o desenvolvimento:
-https://fdscamilla.github.io/the-frontenders/
 
 ##Projeto desenvolvido em grupo durante o Bootcamp Programadores Cariocas/Resilia.
-##Consiste na criação do site de um serviço de assinatura.
+Consiste na criação do site de um serviço de assinatura.
 
 | Participantes | Páginas desenvolvidas|
 | ------------- | -------------------- |
